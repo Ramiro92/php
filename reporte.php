@@ -2,7 +2,7 @@
 	include 'crearpdf.php';
 	require 'cone.php';
 	
-	$query = "SELECT * FROM users";
+	$query = "SELECT * FROM users ORDER BY first_name, last_name ASC";
 	$resultado = $mysqli->query($query);
 	
 	$pdf = new PDF();
