@@ -8,6 +8,7 @@ if(isset($_POST["search"]["value"]))
 {
 	$query .= 'WHERE first_name LIKE "%'.$_POST["search"]["value"].'%" ';
 	$query .= 'OR last_name LIKE "%'.$_POST["search"]["value"].'%" ';
+	$query .= 'OR carnet LIKE "%'.$_POST["search"]["value"].'%" ';
 	$query .= 'OR trabajograduacion LIKE "%'.$_POST["search"]["value"].'%" ';
 	$query .= 'OR egreso LIKE "%'.$_POST["search"]["value"].'%" ';
 	$query .= 'OR graduacion LIKE "%'.$_POST["search"]["value"].'%" ';
