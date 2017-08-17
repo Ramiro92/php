@@ -7,6 +7,18 @@
 		<script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>		
 		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+				<script src="push/push.min.js"></script>
+		<script>
+				Push.create("Hola Mundo",{
+					body:"prueba",
+					icon:"img/u.jpg",
+					timeout:4000,
+					onClick: function(){
+						window.focus();
+						this.close();
+					}
+				});
+		</script>
 		<style>
 			body
 			{
@@ -35,7 +47,7 @@
 					<button type="button" id="add_button" data-toggle="modal" data-target="#userModal" class="btn btn-info btn-lg">Nuevo Usuario</button>
 				</div>
 				<br /><br />
-				<table id="user_data" class="table table-bordered table-striped">
+				<table id="user_data" class="table table-bordered table-striped table-bordered">
 					<thead>
 						<tr>
 							<th width="1%">Imagen</th>
